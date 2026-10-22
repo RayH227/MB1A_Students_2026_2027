@@ -1,0 +1,56 @@
+---
+title: "prac1_exercises"
+author: "Raymond Hackworthy"
+---
+
+```{r}
+sqrt(9)
+```
+
+I am going to round the number 3.14159 to the nearest whole number
+```{r}
+round(3.14159)
+```
+3.14159 rounded to the nearest whole number = 3
+
+ I am going to repeat the number 5 7 times, first by specifying arguments in order and then using their names.
+ 
+```{r}
+print(rep(5,7))
+```
+```{r}
+print(rep(x=5,times=7))
+```
+ 
+ I am going to create character, numerical and logical variables, print them, then check their classes.
+ 
+```{r}
+x<-"I like pizza"
+print(x)
+print(class(x))
+```
+ 
+```{r}
+x<-67
+print(x)
+print(class(x))
+```
+ 
+```{r}
+x<-TRUE
+print(x)
+print(class(x))
+```
+ 
+```{r}
+cell_ID_one<-"CX1"
+cell_ID_two<-"CX2"
+treated_one<-TRUE
+treated_two<-FALSE
+num_cells_before_one<-5415
+num_cells_before_two<-8123
+num_cells_after_one<-1432
+num_cells_after_two<-7543
+```
+ 
+ 

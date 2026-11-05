@@ -59,4 +59,51 @@ my_first_vector<-c(1,5,9)
 print(my_first_vector)
 ```
  
+```{r}
+cell_ID_one<-"CX1"
+cell_ID_two<-"CX2"
+treated_one<-TRUE
+treated_two<-FALSE
+num_cells_before_one<-5415
+num_cells_before_two<-8123
+num_cells_after_one<-1432
+num_cells_after_two<-7543
+
+cell_id<-c(cell_ID_one, cell_ID_two)
+treated<-c(treated_one, treated_two)
+num_cells_before<-c(num_cells_before_one, num_cells_before_two)
+num_cells_after<-c(num_cells_after_one, num_cells_after_two)
+my-data-frame<-tibble(
+cell_ID = cell_id
+treated = treated
+num_cells_before = num_cells_before
+num_cells_after = num_cells_after)
+print(my-data-frame)
+```
+
+```{r}
+all_my_pets<-c("dog","horse","guinea pig","chicken","cat")
+my_only_bird<-all_my_pets[4]
+print(my_only_bird)
+```
+
+```{r}
+# for example
+df <- tibble(
+  cell_ID = c("CX1", "CX2"),
+  treated = c(TRUE, FALSE),
+  num_cells_before = c(5415, 8123),
+  num_cells_after = c(1432, 7543)
+)
+
+gt(df)
+```
+
+```{r}
+weather<-read_csv("data/weather_data.csv")
+```
+```{r}
+gt(weather)
+```
+ 
  

@@ -14,7 +14,11 @@ gt(head(antibiotic_use))
 
 I have selected antibiotic use in England
 
-```{r}
 
+```{r}
+ggplot(antibiotic_use, aes(
+ x = date,
+ y = metric_value
+)) + geom_line(colour = "turquoise") + xlab("Date") + ylab("DID(Standard Consumption") + ggtitle("Rate of access antibiotics used in all care settings")
 ```
 

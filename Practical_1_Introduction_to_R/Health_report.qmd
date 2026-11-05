@@ -1,0 +1,20 @@
+---
+title: "ukhsa_data_analysis"
+---
+
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+antibiotic_use <- read_csv("ukhsa-chart-download.csv")
+gt(head(antibiotic_use))
+```
+
+I have selected antibiotic use in England
+
+```{r}
+
+```
+

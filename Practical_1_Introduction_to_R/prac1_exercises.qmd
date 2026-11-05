@@ -4,7 +4,8 @@ author: "Raymond Hackworthy"
 ---
 
 ```{r}
-sqrt(9)
+library(tidyverse)
+library(gt)
 ```
 
 I am going to round the number 3.14159 to the nearest whole number
@@ -41,7 +42,7 @@ x<-TRUE
 print(x)
 print(class(x))
 ```
- 
+ I am going to make 8 variables from a table containing data
 ```{r}
 cell_ID_one<-"CX1"
 cell_ID_two<-"CX2"
@@ -51,6 +52,11 @@ num_cells_before_one<-5415
 num_cells_before_two<-8123
 num_cells_after_one<-1432
 num_cells_after_two<-7543
+```
+ 
+```{r}
+my_first_vector<-c(1,5,9)
+print(my_first_vector)
 ```
  
  
